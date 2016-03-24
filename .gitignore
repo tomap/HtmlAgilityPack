@@ -1,0 +1,5 @@
+bin/
+obj/
+/Solutions/packages/
+/Nuget/lib/
+.vs/
