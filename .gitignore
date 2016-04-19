@@ -3,3 +3,4 @@ obj/
 /Solutions/packages/
 /Nuget/lib/
 .vs/
+/Solutions/*.htm
