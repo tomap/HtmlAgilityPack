@@ -1,5 +1,7 @@
 version: '2.0.{build}.0'
 
+configuration: Release
+
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
@@ -13,9 +15,13 @@ before_build:
 build:
   parallel: true
   project: 'Solutions\HtmlAgilityPack.4.5.sln'
-  
+  publish_nuget: true
+  verbosity: detailed
+
 artifacts:
-  path: NuGet
+  - path: NuGet
+  - path: '*.nupkg'
+  - path: 'Nuget\**\*.*'
 
 after_build:
   - cmd: nuget pack Nuget\htmlagilitypack.nuspec -version "%APPVEYOR_BUILD_VERSION%"
@@ -24,6 +30,5 @@ deploy:
   provider: NuGet
   api_key:
     secure: srBMVDnPbP0bAvQALTu0Pi+wQWUWCSDExxmbN5HQ/kDXQvvzf/hPwdV5e4zBnhVG
-  artifact: /Nuget\\htmlagilitypack.*\.nupkg/
+  artifact: /HtmlAgilityPack.*\.nupkg/
   skip_symbols: false
-  
