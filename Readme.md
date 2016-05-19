@@ -2,17 +2,17 @@ This is a fork of HtmlAgilityPack from https://htmlagilitypack.codeplex.com/
 
 Currently, here is what is done:
 * build with appveyor: DONE [![Build status](https://ci.appveyor.com/api/projects/status/2uiw19maorp2laor?svg=true)](https://ci.appveyor.com/project/tomap/htmlagilitypack)
+* publish a nuget package
 
 ToDo:
 * Build all projects with appveyor (silverlight, ...). Not interested in doing that, but I accept PR :)
-* publish a nuget package (soon)
- 
+
 
 # What is exactly the Html Agility Pack (HAP)?
 
-This is an agile HTML parser that builds a read/write DOM and supports plain XPATH or XSLT (you actually don't HAVE to understand XPATH nor XSLT to use it, don't worry...). It is a .NET code library that allows you to parse "out of the web" HTML files. The parser is very tolerant with "real world" malformed HTML. The object model is very similar to what proposes System.Xml, but for HTML documents (or streams). 
+This is an agile HTML parser that builds a read/write DOM and supports plain XPATH or XSLT (you actually don't HAVE to understand XPATH nor XSLT to use it, don't worry...). It is a .NET code library that allows you to parse "out of the web" HTML files. The parser is very tolerant with "real world" malformed HTML. The object model is very similar to what proposes System.Xml, but for HTML documents (or streams).
 
-Html Agility Pack now supports Linq to Objects (via a LINQ to Xml Like interface). Check out the new beta to play with this feature 
+Html Agility Pack now supports Linq to Objects (via a LINQ to Xml Like interface). Check out the new beta to play with this feature
 
 # Sample applications:
 
@@ -24,4 +24,4 @@ There is no dependency on anything else than .Net's XPATH implementation. There 
 
 # License
 
-See License.txt
+Code under Microsoft Public License (Ms-PL). See License.txt
