@@ -1,4 +1,12 @@
- This is a fork of HtmlAgilityPack from https://htmlagilitypack.codeplex.com/
+This is a fork of HtmlAgilityPack from https://htmlagilitypack.codeplex.com/
+
+Currently, here is what is done:
+* build with appveyor: DONE [![Build status](https://ci.appveyor.com/api/projects/status/2uiw19maorp2laor?svg=true)](https://ci.appveyor.com/project/tomap/htmlagilitypack)
+
+ToDo:
+* Build all projects with appveyor (silverlight, ...). Not interested in doing that, but I accept PR :)
+* publish a nuget package (soon)
+ 
 
 # What is exactly the Html Agility Pack (HAP)?
 
