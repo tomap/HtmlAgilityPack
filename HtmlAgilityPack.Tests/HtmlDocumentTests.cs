@@ -8,16 +8,13 @@ namespace HtmlAgilityPack.Tests
 	[TestFixture]
 	public class HtmlDocumentTests
 	{
-		private string _contentDirectory;
-		
-	
+		private readonly string _contentDirectory;
 
-		[TestFixtureSetUp]
-		public void Setup()
-		{
-			_contentDirectory = Directory.GetCurrentDirectory() + "\\files\\";
-		}
-
+        public HtmlDocumentTests()
+        {
+             _contentDirectory = TestContext.CurrentContext.TestDirectory + "\\files\\";
+        }
+        
 		private HtmlDocument GetMshomeDocument()
 		{
 			var doc = new HtmlDocument();
