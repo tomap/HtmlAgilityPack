@@ -1,3 +1,10 @@
+# Archived project
+
+This project is no longer maintained.
+I advise you to use https://github.com/zzzprojects/html-agility-pack which seems to be fairly maintained
+
+----------------------------------------------------
+
 This is a fork of HtmlAgilityPack from https://htmlagilitypack.codeplex.com/
 
 Currently, here is what is done:
